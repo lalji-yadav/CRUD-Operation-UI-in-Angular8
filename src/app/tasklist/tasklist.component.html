@@ -1,4 +1,4 @@
-<!-- <div class="main">
+<div class="main">
     <h3 class="Todo-app">To Do App </h3>
 
    <div class="form-content">
@@ -25,6 +25,7 @@
         <tr *ngFor="let obj of loadedPosts; let j=index">
           <td>{{ obj.taskName }}</td>
       <td>
+
        <button [routerLink]= "['/update', obj._id]">UPDATE</button>
       </td>
           <td>
@@ -35,6 +36,4 @@
 
     </div>
     </div>
-  </div> -->
-  
-  <router-outlet> </router-outlet>
+  </div>

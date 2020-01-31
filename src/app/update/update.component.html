@@ -1,0 +1,13 @@
+<div class="main">
+    <h3 class="Todo-app">Update TaskName</h3>
+
+   <div class="form-content">
+    <form  #postForm="ngForm" (ngSubmit)="updatePost(postForm.value)">
+      <input type="text" name="taskName" id="taskName" placeholder="Task Name" [(ngModel)] ='data.taskName' ngModel> <br> <br>
+      <button class="btn btn-primary"  type="submit"> Update </button> &nbsp;
+
+      <button class="btn btn-primary" [routerLink] = "['/tasklist']">Back</button>
+
+    </form>
+  </div>
+</div>
